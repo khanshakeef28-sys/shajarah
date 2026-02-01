@@ -1,0 +1,219 @@
+@import "tailwindcss";
+
+/* --- 1. Import Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@theme {
+  /* --- Fonts --- */
+  --font-callig: "Playfair Display", serif;
+  --font-display: "Poppins", sans-serif;
+
+  /* --- Colors (Merged from your old config) --- */
+  --color-beige: #F5F5DC;
+  --color-beige-dark: #E8DCCA;
+  
+  --color-olive: #556B2F;
+  --color-olive-light: #808000;
+  
+  /* This fixes your 'text-yellow' issue */
+  --color-yellow: #FFD700;
+  --color-yellow-soft: #F3E5AB;
+
+  --color-black: #1A1A1A;
+  --color-white: #FAFAFA;
+  --color-warm-offwhite: #FAF7F2;
+  
+  /* Additional brand color from your CSS */
+  --color-brand-tan: #E3D8C6; 
+}
+
+/* --- Base Styles --- */
+@layer base {
+  body {
+    @apply bg-warm-offwhite text-black antialiased;
+  }
+
+  h1, .h1 { @apply font-callig text-5xl leading-tight md:text-6xl; }
+  h2, .h2 { @apply font-display text-3xl font-semibold md:text-4xl; }
+  h3, .h3 { @apply font-display text-2xl font-semibold md:text-3xl; }
+
+  :focus-visible {
+    outline: 2px solid var(--color-yellow);
+    outline-offset: 2px;
+  }
+}
+
+/* --- Components --- */
+@layer components {
+  /* Accessibility notes:
+     - Keep one h1 per page and logical heading order.
+     - Provide descriptive alt text for content images.
+     - Ensure focus-visible styling on interactive controls.
+     - Respect prefers-reduced-motion for animations. */
+  .section {
+    @apply max-w-6xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 text-sm font-semibold transition-all border border-black active:scale-95;
+  }
+
+  .btn-primary {
+    @apply bg-black text-beige hover:bg-black/90;
+  }
+
+  .btn-outline {
+    @apply bg-transparent text-black hover:bg-black hover:text-beige;
+  }
+
+  .card {
+    @apply rounded-xl border border-black/10 bg-white/60 backdrop-blur-sm shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .sketch-frame {
+    @apply relative rounded-3xl border border-black/15 bg-white p-3 shadow-sm;
+  }
+
+  .sketch-frame::after {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border: 1px dashed rgba(0, 0, 0, 0.2);
+    border-radius: 1.25rem;
+    pointer-events: none;
+  }
+
+  .sketch-photo {
+    display: block;
+    width: 100%;
+    border-radius: 1.25rem;
+    filter: grayscale(1) contrast(1.15) brightness(1.05);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  }
+
+  .magic-bento-grid {
+    @apply relative;
+  }
+
+  .magic-bento-item {
+    @apply relative rounded-3xl overflow-hidden;
+    transform: perspective(800px) rotateX(var(--magic-tilt-x, 0deg)) rotateY(var(--magic-tilt-y, 0deg));
+    transition: transform 200ms ease;
+  }
+
+  .magic-bento-item::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    background: radial-gradient(
+      var(--magic-radius, 360px) circle at var(--magic-x, 50%) var(--magic-y, 50%),
+      rgba(var(--magic-glow, 132, 0, 255), 0.25),
+      rgba(0, 0, 0, 0) 60%
+    );
+    opacity: 0;
+    transition: opacity 150ms ease;
+    pointer-events: none;
+  }
+
+  .magic-bento-item:hover::before {
+    opacity: 1;
+  }
+
+  .magic-bento-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 0 1px rgba(var(--magic-glow, 132, 0, 255), 0.25);
+    opacity: 0;
+    transition: opacity 200ms ease;
+    pointer-events: none;
+  }
+
+  .magic-bento-item:hover::after {
+    opacity: 1;
+  }
+
+  .magic-bento-inner {
+    @apply relative z-10;
+  }
+
+  .magic-bento-click::after {
+    opacity: 1;
+    animation: magic-bento-pulse 400ms ease;
+  }
+
+  .nav-link {
+    @apply text-sm md:text-base font-medium hover:opacity-70 transition-opacity;
+  }
+
+  .skip-link {
+    @apply absolute left-3 top-3 z-[1000] rounded-md bg-black px-4 py-2 text-sm font-semibold text-beige transition-transform;
+    transform: translateY(-200%);
+  }
+
+  .skip-link:focus {
+    transform: translateY(0);
+  }
+}
+
+@keyframes magic-bento-pulse {
+  0% {
+    box-shadow: 0 0 0 1px rgba(var(--magic-glow, 132, 0, 255), 0.25);
+  }
+  60% {
+    box-shadow: 0 0 0 10px rgba(var(--magic-glow, 132, 0, 255), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 1px rgba(var(--magic-glow, 132, 0, 255), 0);
+  }
+}
+
+/* --- Custom Preloader --- */
+.loader-grid {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  gap: 40px;
+  width: 90px;
+  aspect-ratio: 1/1;
+  animation: rotate 2s linear infinite;
+}
+
+.loader-dot {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--color-black);
+  animation: scale 2s infinite alternate;
+}
+
+.loader-dot:nth-child(1) { animation-delay: -1s; }
+.loader-dot:nth-child(2) { animation-delay: -1s; }
+.loader-dot:nth-child(3) { animation-delay: -1s; order: 1; }
+.loader-dot:nth-child(4) { animation-delay: -1s; }
+
+@keyframes scale {
+  0% { transform: scale(0.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .animate-scroll,
+  .animate-gradient,
+  .loader-grid,
+  .loader-dot {
+    animation: none !important;
+  }
+}
