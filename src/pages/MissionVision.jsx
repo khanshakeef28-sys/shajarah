@@ -3,7 +3,7 @@ import { Target, Eye, LucideAirplay } from 'lucide-react';
 import usePrefersReducedMotion from '../hooks/usePrefersReducedMotion';
 
 // 1. IMPORT YOUR VIDEO
-import ShajarahVideo from '../assets/shajarah-vision.mp4'; 
+import QuranImage from '../assets/Quran.jpg';
 
 const VisionMission = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
@@ -48,24 +48,19 @@ const VisionMission = () => {
             </div>
           </div>
 
-          {/* --- RIGHT SIDE: LOCAL VIDEO PLAYER --- */}
+          {/* --- RIGHT SIDE: IMAGE PANEL (VIDEO REMOVED FOR DEPLOY SIZE) --- */}
           <div className="relative">
             {/* Design Accents */}
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-beige rounded-full -z-10"></div>
             <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-yellow/20 rounded-full -z-10"></div>
 
             <div className="rounded-2xl overflow-hidden shadow-xl border-8 border-white bg-black">
-              <video 
-              autoPlay={!prefersReducedMotion}
-              loop
-              muted
-                controls 
+              <img
+                src={QuranImage}
+                alt="Qur'an study session"
                 className="w-full h-full object-cover"
-                poster="../assets/Quran.jpg" // Optional: Image shown before video plays
-              >
-                <source src={ShajarahVideo} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+                loading="lazy"
+              />
             </div>
           </div>
 
