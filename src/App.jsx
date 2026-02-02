@@ -15,7 +15,7 @@ import WomenKhatmah from './pages/WomenKhatmah.jsx';
 import WomenParentingSeries from './pages/WomenParentingSeries.jsx';
 import WomenAlHudaOutreach from './pages/WomenAlHudaOutreach.jsx';
 // src/App.jsx
-import Preloader from './components/PreLoader.jsx';
+import Preloader from './components/Preloader.jsx';
 
 export default function App() {
   const location = useLocation();
