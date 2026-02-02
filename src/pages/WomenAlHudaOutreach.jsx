@@ -91,7 +91,14 @@ const WomenAlHudaOutreach = () => {
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3">
               <button className="btn btn-primary">Register Now</button>
-              <button className="btn btn-outline">Talk to an Advisor</button>
+              <a
+                className="btn btn-outline"
+                href="https://calendly.com/shajarahacademy-info/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Talk to an Advisor
+              </a>
             </div>
           </div>
         </MagicBentoItem>

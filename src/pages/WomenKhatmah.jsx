@@ -9,6 +9,7 @@ import {
   Clock
 } from 'lucide-react';
 import { MagicBento, MagicBentoItem } from '../components/MagicBento';
+import { Link } from 'react-router-dom';
 
 const WomenKhatmah = () => {
   return (
@@ -189,8 +190,17 @@ const WomenKhatmah = () => {
               </p>
             </div>
             <div className="flex flex-wrap items-center justify-center gap-3">
-              <button className="btn btn-primary">Book a Trial Class</button>
-              <button className="btn btn-outline">Talk to an Advisor</button>
+              <Link className="btn btn-primary" to="/contact">
+                Get in touch
+              </Link>
+              <a
+                className="btn btn-outline"
+                href="https://calendly.com/shajarahacademy-info/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Talk to an Advisor
+              </a>
             </div>
           </div>
         </MagicBentoItem>
