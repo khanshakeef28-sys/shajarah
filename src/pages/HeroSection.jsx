@@ -75,9 +75,14 @@ const HeroSection = () => {
       <div className='Space-y-6' ></div>
 
       {/* Button */}
-      <button className="bg-yellow text-black px-10 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl">
-      Join Our Community
-     </button>
+      <a
+        href="https://chat.whatsapp.com/JRFoG9HP97wEf8NfrWmv0S"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="bg-yellow text-black px-10 py-3 rounded-full font-bold transition-all transform hover:scale-105 shadow-xl inline-block"
+      >
+        Join Our Community
+      </a>
      <div className='Space-y-6' ></div>
       
     </div>

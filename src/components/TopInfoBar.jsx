@@ -1,6 +1,11 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
-import { Phone, Sun, Moon, MapPin, Facebook, Twitter, Linkedin, Instagram, Youtube } from 'lucide-react';
+import { Phone, Sun, Moon, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
+
+const FACEBOOK_URL = 'https://www.facebook.com/share/1CWunFzfFa/';
+const INSTAGRAM_URL = 'https://www.instagram.com/shajarahseekers?igsh=MWl6ZW5jZjBud2R1cA==';
+const YOUTUBE_URL = 'https://www.youtube.com/@shajaraseekers';
+const LINKEDIN_URL = '#'; // TODO: add your LinkedIn profile URL
 
 const TopInfoBar = () => {
   const location = useLocation();
@@ -15,10 +20,10 @@ const TopInfoBar = () => {
       </div>
       <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-6">
         <div className="flex gap-4">
-          <Facebook size={16} className="hover:text-yellow cursor-pointer"/>
-          <Instagram size={16} className="hover:text-yellow cursor-pointer"/>
-          <Youtube size={16} className="hover:text-yellow cursor-pointer"/>
-          <Linkedin size={16} className="hover:text-yellow cursor-pointer"/>
+          <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-yellow cursor-pointer transition-colors"><Facebook size={16} /></a>
+          <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-yellow cursor-pointer transition-colors"><Instagram size={16} /></a>
+          <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-yellow cursor-pointer transition-colors"><Youtube size={16} /></a>
+          <a href={LINKEDIN_URL} aria-label="LinkedIn" className="hover:text-yellow cursor-pointer transition-colors"><Linkedin size={16} /></a>
         </div>
         <span className="flex items-center gap-2"><MapPin size={16} className="text-yellow" /> India</span>
         <span className="flex items-center gap-2 font-semibold"><Phone size={16} /> +(91) 885-0999-818</span>

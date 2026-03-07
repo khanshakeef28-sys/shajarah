@@ -86,9 +86,9 @@ export default function MovingTestimonials() {
         </p>
       </div>
 
-      {/* Moving testimonials container */}
-      <div className="relative overflow-hidden">
-        <div className="flex flex-nowrap animate-scroll">
+      {/* Moving testimonials container - full bleed so animation runs edge-to-edge on small screens */}
+      <div className="relative overflow-hidden w-full -mx-4 md:-mx-6 lg:-mx-8">
+        <div className="flex flex-nowrap animate-scroll w-max">
           {duplicatedTestimonials.map((testimonial, index) => (
             <TestimonialCard key={`${testimonial.id}-${index}`} testimonial={testimonial} />
           ))}
@@ -101,12 +101,13 @@ export default function MovingTestimonials() {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-50%);
+            transform: translateX(-20%);
           }
         }
 
         .animate-scroll {
           animation: scroll 10s linear infinite;
+          will-change: transform;
         }
 
         .animate-scroll:hover {
