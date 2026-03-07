@@ -3,8 +3,8 @@ import React from 'react';
 import { MagicBento, MagicBentoItem } from '../components/MagicBento';
 //import { Users, Calendar } from 'lucide-react';
 
-import KidReadingQuran from '../assets/KidReadingQuran.jpg';
-import QuranKidMom from '../assets/QuranKidMom.jpg';
+import KidReadingQuran from '../assets/QuaidaKids.jpg';
+import QuranKidMom from '../assets/parenting.jpg';
 import QuranWithWomen from '../assets/QuranwithWomen.jpg';
 import SundayClass from '../assets/Sundayclass.jpg';
 
@@ -29,7 +29,7 @@ const featuredCourses = [
       image: SundayClass,
       title: "Sunday Kids Class",
       courseName: "Sunday Kids Class",
-   
+      keyPoints: "Every Sunday",
       coursDetails: "A consistent weekly circle nurturing faith, Manners, and Qur’anic connection in young hearts.",
       highlightGreenTitle: "hildren’s Islamic Program",
       highlightGreenSubtitle: "Children’s Islamic Program",
@@ -81,7 +81,7 @@ const FeaturedCourses = () => {
           </p>
         </div>
 
-        <MagicBento className="grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-8">
+        <MagicBento className="grid grid-cols-1 md:grid-cols-4 auto-rows-fr gap-8">
           {featuredCourses.map((course) => (
             <MagicBentoItem
               key={course.id}

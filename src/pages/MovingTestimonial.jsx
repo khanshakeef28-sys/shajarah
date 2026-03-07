@@ -55,11 +55,6 @@ const testimonials = [
 const TestimonialCard = ({ testimonial }) => (
   <div className="card shrink-0 w-80 rounded-3xl bg-white p-6 mx-3">
     <div className="flex items-center mb-4">
-      {/* <img 
-        // src={testimonial.image} 
-        alt={testimonial.name}
-        className="w-12 h-12 rounded-full mr-4"
-      /> */}
       <div>
         <h3 className="font-semibold text-black">{testimonial.name}</h3>
         <p className="text-sm text-black/60">{testimonial.role}</p>
@@ -92,8 +87,8 @@ export default function MovingTestimonials() {
       </div>
 
       {/* Moving testimonials container */}
-      <div className="relative">
-        <div className="flex animate-scroll">
+      <div className="relative overflow-hidden">
+        <div className="flex flex-nowrap animate-scroll">
           {duplicatedTestimonials.map((testimonial, index) => (
             <TestimonialCard key={`${testimonial.id}-${index}`} testimonial={testimonial} />
           ))}
