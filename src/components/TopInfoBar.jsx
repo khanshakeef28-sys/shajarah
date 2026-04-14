@@ -1,11 +1,14 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { Phone, Sun, Moon, MapPin, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
-
-const FACEBOOK_URL = 'https://www.facebook.com/share/1CWunFzfFa/';
-const INSTAGRAM_URL = 'https://www.instagram.com/shajarahseekers?igsh=MWl6ZW5jZjBud2R1cA==';
-const YOUTUBE_URL = 'https://www.youtube.com/@shajaraseekers';
-const LINKEDIN_URL = '#'; // TODO: add your LinkedIn profile URL
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  YOUTUBE_URL,
+  LINKEDIN_URL,
+  PHONE_DISPLAY,
+  LOCATION,
+} from '../constants/contact.js';
 
 const TopInfoBar = () => {
   const location = useLocation();
@@ -25,8 +28,8 @@ const TopInfoBar = () => {
           <a href={YOUTUBE_URL} target="_blank" rel="noopener noreferrer" aria-label="YouTube" className="hover:text-yellow cursor-pointer transition-colors"><Youtube size={16} /></a>
           <a href={LINKEDIN_URL} aria-label="LinkedIn" className="hover:text-yellow cursor-pointer transition-colors"><Linkedin size={16} /></a>
         </div>
-        <span className="flex items-center gap-2"><MapPin size={16} className="text-yellow" /> India</span>
-        <span className="flex items-center gap-2 font-semibold"><Phone size={16} /> +(91) 885-0999-818</span>
+        <span className="flex items-center gap-2"><MapPin size={16} className="text-yellow" /> {LOCATION}</span>
+        <span className="flex items-center gap-2 font-semibold"><Phone size={16} /> {PHONE_DISPLAY}</span>
       </div>
     </div>
   );
