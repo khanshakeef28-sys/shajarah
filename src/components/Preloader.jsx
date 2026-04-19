@@ -25,7 +25,7 @@ const Preloader = () => {
   return (
     <div
       className={`fixed left-0 right-0 z-[99999] flex h-full w-full items-center justify-center bg-[#FFD700] transition-all duration-3000 ease-[cubic-bezier(0.86,0,0.09,1)] ${
-        isLoaded ? "bottom-[-100%]" : "bottom-0"
+        isLoaded ? "bottom-[-100%] pointer-events-none" : "bottom-0"
       }`}
     >
       <div className="loader-grid">

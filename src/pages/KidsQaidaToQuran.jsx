@@ -17,7 +17,7 @@ const KidsQaidaToQuran = () => {
     <section className="section space-y-10 py-10">
       <div className="space-y-4">
         <div className="space-y-2">
-          <h1 className="h1">Qaida to Quran Journey</h1>
+          <h1 className="h1">Qa’idah to Quran Journey</h1>
           <div className="max-w-3xl rounded-2xl border border-black/10 bg-white/60 p-4 text-sm text-black/70 shadow-sm">
             A structured online program for ages 5-15 that builds strong foundations in Arabic
             reading and leads children to confident Quran recitation.

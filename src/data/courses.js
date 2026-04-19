@@ -11,6 +11,7 @@ export const courses = {
   women: [
     { title: "Qa'idah to Recitation", slug: "qaidah-to-recitation" },
     { title: "Khatmah", slug: "khatmah" },
+    { title: "Parenting Series", slug: "parenting-series" },
     { title: "Alhuda Outreach", slug: "alhuda-outreach" }
   ]
 };

@@ -42,7 +42,7 @@ export default function Navbar() {
 
   return (
     <header className={`sticky top-0 z-40 backdrop-blur border-b ${isHome ? 'bg-black/95 border-cream/10 text-white' : 'bg-white/90 border-black/10 text-black'}`}>
-      <div className="section relative flex items-center justify-between py-3 md:py-4">
+      <div ref={menuRef} className="section relative flex items-center justify-between py-3 md:py-4">
         <Link to="/" className="flex items-center gap-2 md:gap-4">
           <ShajarahLogo className={`w-10 h-10 ${isHome ? 'text-yellow' : 'text-olive'}`} />
           <div className="font-callig text-lg md:text-xl lg:text-2xl leading-5">Shajarah Academy</div>
@@ -59,7 +59,7 @@ export default function Navbar() {
         </button>
 
         {/* Desktop menu */}
-        <nav ref={menuRef} className="hidden md:block ml-2" aria-label="Primary">
+        <nav className="hidden md:block ml-2" aria-label="Primary">
           <ul className="flex items-center gap-4 lg:gap-6">
           <li><NavLink to="/" className={linkCls}>Home</NavLink></li>
 
