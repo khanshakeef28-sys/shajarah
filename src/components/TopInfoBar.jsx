@@ -17,9 +17,9 @@ const TopInfoBar = () => {
   return (
     <div className={`${isHome ? 'text-white' : 'text-black'} container mx-auto px-6 py-3 flex flex-col md:flex-row justify-between items-center gap-3 text-center md:text-left text-sm opacity-90`}>
       <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 md:gap-6">
-        
-        <span className="flex items-center gap-2"><Moon size={16} className="text-yellow" /> حي على الفلاح</span>
-        <span className="flex items-center gap-2"><Sun size={16} className="text-yellow" /> حي على الصلاة</span>
+{/*        
+      <span className="flex items-center gap-2"><Moon size={16} className="text-yellow" /> حي على الفلاح</span> */}
+        <span className="flex items-center gap-2"><Sun size={16} className="text-yellow" /> اللهم آتنا في الدنيا حسنة وفي الآخرة حسنة</span>
       </div>
       <div className="flex flex-wrap items-center justify-center md:justify-end gap-4 md:gap-6">
         <div className="flex gap-4">

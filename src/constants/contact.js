@@ -4,8 +4,8 @@ export const INSTAGRAM_URL =
 export const YOUTUBE_URL = 'https://www.youtube.com/@shajaraseekers';
 export const LINKEDIN_URL = '#'; // TODO: add your LinkedIn profile URL
 
-export const PHONE_DISPLAY = '+91 88509 9818';
-export const PHONE_TEL = '+91885099818';
+export const PHONE_DISPLAY = '+91 8850999818';
+export const PHONE_TEL = '+918850999818';
 export const EMAIL = 'info@shajarahacademy.com';
 export const WEBSITE_DISPLAY = 'www.shajarahacademy.com';
 export const WEBSITE_URL = 'https://www.shajarahacademy.com';

@@ -102,6 +102,40 @@ export default function About() {
       </div>
 
       <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
+        <h2 className="text-2xl font-semibold text-black">Message from Founder</h2>
+        <div className="mt-3 space-y-4 text-black/80">
+          <p>
+            In the pursuit of Hasanah, I often reflected on a simple question: How can we
+            live a life that flourishes in this world while remaining anchored for the
+            next?
+          </p>
+          <p>
+            I realized that what we truly need is not just knowledge, but a living
+            connection with the Qur’an—one that shapes our character, guides our choices,
+            and brings balance into everyday life.
+          </p>
+          <p>
+            At Shajarah Academy, this vision comes to life through a nurturing approach
+            where learning is not forced, but grows through the gentle rhythm of Qur’anic
+            guidance and character development.
+          </p>
+          <p>
+            With over a decade of experience in Islamic education, I envisioned a space
+            where Dunya and Aakhirah are not separate paths, but one unified journey
+            toward purpose and growth.
+          </p>
+          <p>
+            My hope is that every learner who joins this journey finds not only
+            knowledge, but true transformation—within themselves and their families.
+          </p>
+          <div className="pt-2">
+            <div className="font-semibold text-black">Kahkashan Altamash</div>
+            <div className="text-sm text-black/70">Founder &amp; Lead Educator</div>
+          </div>
+        </div>
+      </div>
+
+      <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
         <h2 className="text-2xl font-semibold text-black">Impact & Reach</h2>
         <p className="mt-3 text-black/80">
           Shajarah Academy nurtures learners across India, UAE, the UK, and beyond through

@@ -64,22 +64,30 @@ const Founder = () => {
             
             <div className="space-y-6 text-lg text-gray-700 leading-relaxed">
               <p>
-                In the pursuit of <span className="text-[#4A8522] font-bold">Hasanah</span>, we recognized a need for a bridge between ancient wisdom and modern clarity. Our journey began with a simple question: How can we live a life that flourishes in this world while remaining anchored in the next?
+                In the pursuit of <span className="text-[#4A8522] font-bold">Hasanah</span>, I often reflected on a simple question: How can we live a life that flourishes in this world while remaining anchored for the next?
               </p>
               
-              <p className="border-l-4 border-[#E3D8C6] pl-6 italic text-xl">
-                "Our mission is to empower learners to find balance. Not through force, but through the gentle rhythm of Quranic guidance and character building."
+              <p>
+                I realized that what we truly need is not just knowledge, but a living connection with the Qur’an—one that shapes our character, guides our choices, and brings balance into everyday life.
               </p>
 
               <p>
-                With over a decade of dedication to Islamic education, I envisioned a platform where 'Dunya and Akhira' aren't two separate paths, but one unified journey toward purpose. 
+                At Shajarah Academy, this vision comes to life through a nurturing approach where learning is not forced, but grows through the gentle rhythm of Qur’anic guidance and character development.
+              </p>
+
+              <p>
+                With over a decade of experience in Islamic education, I envisioned a space where Dunya and Aakhirah are not separate paths, but one unified journey toward purpose and growth.
+              </p>
+
+              <p>
+                My hope is that every learner who joins this journey finds not only knowledge, but true transformation—within themselves and their families.
               </p>
             </div>
 
             {/* Social / Signature */}
             <div className="mt-10">
-              <p className="font-callig text-3xl text-[#4A8522]">Founder Name</p>
-              <p className="text-sm text-gray-500 uppercase tracking-tighter">Director & Lead Educator</p>
+              <p className="font-callig text-3xl text-[#4A8522]">Kahkashan Altamash</p>
+              <p className="text-sm text-gray-500 uppercase tracking-tighter">Founder & Lead Educator</p>
             </div>
           </motion.div>
         </div>

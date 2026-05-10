@@ -31,9 +31,9 @@ const ShajarahLogo = ({
           </g>
         </svg>
       </div>
-      <span className="font-callig mt-0.5 max-w-[6.5rem] text-center text-[0.6rem] leading-[1.05] tracking-wide sm:max-w-[7.5rem] sm:text-[0.65rem] md:max-w-none md:text-xs">
+      {/* <span className="font-callig mt-0.5 max-w-[6.5rem] text-center text-[0.6rem] leading-[1.05] tracking-wide sm:max-w-[7.5rem] sm:text-[0.65rem] md:max-w-none md:text-xs">
         Shajarah 
-              </span>
+              </span> */}
     </div>
   );
 };
