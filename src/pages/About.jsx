@@ -23,14 +23,29 @@ export default function About() {
             About Shajarah Academy
           </p>
           <h1 className="h1">
-            From roots of knowledge to fruits of action
+            From Roots of Knowledge to Fruits of Action
           </h1>
           <p className="max-w-3xl text-black/80">
-            Kahkashan Altamash was born and raised in India and her path beautifully weaves
-            academic learning with Islamic knowledge. After studying Biotechnology and
-            Microbiology and teaching at the PhD level, her calling became the Qur'an.
-            Shajarah Academy was founded to help families build a living connection to the
-            Book of Allah, so that faith, character, and purposeful learning grow together.
+            Shajarah Academy was founded with a simple yet powerful vision: to help
+            individuals and families build a living relationship with the Qur&apos;an—one
+            that reflects in their character, choices, and everyday life.
+          </p>
+          <p className="max-w-3xl text-black/80">
+            Founded by Kahkashan Altamash, the academy is a reflection of a journey that
+            bridges academic learning, leadership development, and Islamic scholarship.
+            With a background in science and experience in teaching at advanced academic
+            levels, her path gradually transformed toward the Qur&apos;an—turning knowledge
+            into purpose.
+          </p>
+          <p className="max-w-3xl text-black/80">
+            Through leadership training and personal development programs with global
+            learning platforms, she has cultivated a people-centered, transformational
+            approach to education—one that goes beyond information to real inner growth.
+          </p>
+          <p className="max-w-3xl text-black/80">
+            Today, Shajarah Academy nurtures women, teens, and children through a balanced
+            model that connects Deen and Dunya, helping learners grow with clarity,
+            confidence, and faith.
           </p>
           <div className="flex flex-wrap gap-3 text-sm">
             <span className="rounded-full bg-yellow/90 px-3 py-1 font-semibold text-black">
@@ -40,7 +55,7 @@ export default function About() {
               Balanced Deen & Dunya
             </span>
             <span className="rounded-full bg-yellow/90 px-3 py-1 font-semibold text-black">
-              Qur'an-Centered Learning
+              Qur&apos;an-Centered Learning
             </span>
           </div>
         </div>
@@ -50,59 +65,67 @@ export default function About() {
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold text-black">Mission</h2>
           <p className="mt-3 text-black/80">
-            To make Qur'anic learning a living part of everyday life—supporting parents,
-            guiding children, and mentoring youth with a balanced model of faith and
-            modern knowledge that strengthens identity and values.
+            To make Qur&apos;anic learning a natural and meaningful part of everyday
+            life—supporting parents, guiding children, and mentoring youth through a
+            balanced approach that strengthens faith, character, and identity.
           </p>
         </div>
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
           <h2 className="text-2xl font-semibold text-black">Vision</h2>
           <p className="mt-3 text-black/80">
-            To nurture a generation anchored in the Qur'an—where mothers find clarity in
-            parenting, children grow with love for the Book of Allah, and youth flourish
-            into confident Muslims carrying this legacy forward.
+            To raise a generation deeply connected to the Qur&apos;an—where mothers parent
+            with clarity, children grow with love for the Book of Allah, and youth emerge
+            as confident, value-driven individuals carrying this legacy forward.
           </p>
         </div>
       </div>
 
       <div className="grid gap-8 lg:grid-cols-2">
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-black">Founder’s Journey</h2>
+          <h2 className="text-2xl font-semibold text-black">Founder&apos;s Journey</h2>
           <p className="mt-3 text-black/80">
-            Kahkashan is an educator, mentor, and community builder with 10+ years of
-            teaching and guiding. She serves as Chapter Head (Nagpur) for Alhuda Outreach
-            India and has participated in community intellectual meets and jury panels.
+            Kahkashan Altamash is an educator, mentor, and community leader with over a
+            decade of experience in teaching and guiding learners. She serves as the
+            Nagpur Chapter Head of Alhuda Outreach India and actively contributes to
+            educational initiatives, workshops, and community development spaces.
           </p>
-          <div className="mt-4 space-y-2 text-sm text-black/70">
-            <div className="font-semibold text-black">Academic Education</div>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>M.Sc. Biotechnology, Nagpur University (2009)</li>
-              <li>Post-Master’s Diploma in Nanotechnology, Karnataka (2010)</li>
-              <li>Former Ph.D. student, Water Technology research (2010–2011)</li>
-              <li>B.Ed. (Bachelor of Education), 2014</li>
-            </ul>
-          </div>
+          <p className="mt-3 text-black/80">
+            Her journey reflects a unique blend of scientific discipline, leadership
+            training, and spiritual depth, enabling her to design learning experiences
+            that are both structured and transformative.
+          </p>
         </div>
 
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-black">Islamic Studies</h2>
+          <h2 className="text-2xl font-semibold text-black">Education, Ijazah & Training</h2>
           <p className="mt-3 text-black/80">
-            Her Islamic education includes advanced Tajweed, Qirā'ah, Arabic grammar, and
-            Islamic sciences, with studies under scholars from India, Saudi Arabia, Sri
-            Lanka, the US, UK, Canada, Pakistan, and beyond.
+            Kahkashan Altamash&apos;s journey reflects a meaningful integration of academic
+            excellence, Islamic scholarship, and leadership development. With a strong
+            foundation in science and education, alongside advanced studies in Qur&apos;anic
+            recitation, Tajweed, and Islamic sciences, she brings a balanced and holistic
+            approach to learning. Her training through global leadership and personal
+            development platforms further strengthens her ability to mentor, guide, and
+            nurture transformative growth in individuals and families.
           </p>
-          <ul className="mt-4 list-disc pl-5 space-y-1 text-sm text-black/70">
-            <li>Qira'ah completion: Ḥafṣ and Shu'bah 'an 'Āṣim</li>
-            <li>Recitation Khatmah (Hafs) – Dar Al Khair</li>
-            <li>Certified Qa'idah Nooraniyah Trainer – Furqaan Center, Jeddah</li>
-            <li>Ijazah in Muqaddimat al-Jazariyyah</li>
-            <li>Ijazah in listening "Akhlaq Ahl al-Qur'an"</li>
-          </ul>
+          <div className="mt-4 space-y-2 text-sm text-black/70">
+            <div className="font-semibold text-black">Highlights:</div>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Master&apos;s in Biotechnology; Diploma in Nanotechnology; Bachelor of Education</li>
+              <li>Advanced teaching and research experience</li>
+              <li>Qirā&apos;ah completion: Ḥafṣ &amp; Shu&apos;bah &apos;an &apos;Āṣim</li>
+              <li>Recitation Khatmah – Dar Al Khair</li>
+              <li>Certified Qa&apos;idah Nooraniyah Trainer – Furqaan Center, Jeddah</li>
+              <li>Ijazah in Muqaddimat al-Jazariyyah</li>
+              <li>Ijazah in Tohfatul Atfaal</li>
+              <li>Ijazah in Akhlaq Hamlat- al-Qur&apos;an</li>
+              <li>Leadership and personal development training through global platforms</li>
+            </ul>
+          </div>
         </div>
       </div>
 
       <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
-        <h2 className="text-2xl font-semibold text-black">Message from Founder</h2>
+        <h2 className="text-2xl font-semibold text-black">A Message from the Founder</h2>
         <div className="mt-3 space-y-4 text-black/80">
           <p>
             In the pursuit of Hasanah, I often reflected on a simple question: How can we
@@ -111,22 +134,22 @@ export default function About() {
           </p>
           <p>
             I realized that what we truly need is not just knowledge, but a living
-            connection with the Qur’an—one that shapes our character, guides our choices,
+            connection with the Qur&apos;an—one that shapes our character, guides our choices,
             and brings balance into everyday life.
           </p>
           <p>
             At Shajarah Academy, this vision comes to life through a nurturing approach
-            where learning is not forced, but grows through the gentle rhythm of Qur’anic
+            where learning is not forced, but grows through the gentle rhythm of Qur&apos;anic
             guidance and character development.
           </p>
           <p>
             With over a decade of experience in Islamic education, I envisioned a space
-            where Dunya and Aakhirah are not separate paths, but one unified journey
-            toward purpose and growth.
+            where Dunya and Aakhirah are not separate paths, but one unified journey toward
+            purpose and growth.
           </p>
           <p>
-            My hope is that every learner who joins this journey finds not only
-            knowledge, but true transformation—within themselves and their families.
+            My hope is that every learner who joins this journey finds not only knowledge,
+            but true transformation—within themselves and their families.
           </p>
           <div className="pt-2">
             <div className="font-semibold text-black">Kahkashan Altamash</div>
@@ -136,26 +159,24 @@ export default function About() {
       </div>
 
       <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
-        <h2 className="text-2xl font-semibold text-black">Impact & Reach</h2>
+        <h2 className="text-2xl font-semibold text-black">Impact &amp; Reach</h2>
         <p className="mt-3 text-black/80">
-          Shajarah Academy nurtures learners across India, UAE, the UK, and beyond through
-          Qur'an-focused programs for children, teens, and adults—rooted in authentic
-          knowledge, warm mentorship, and a balanced approach to life.
+          Shajarah Academy nurtures learners across India, UAE and beyond, through
+          Qur&apos;an-centered programs rooted in authentic knowledge, warm mentorship, and
+          a balanced approach to life.
         </p>
         <div className="mt-4 flex flex-wrap gap-3 text-sm">
           <span className="rounded-full bg-yellow/90 px-3 py-1 font-semibold text-black">
             500+ learners nurtured
           </span>
           <span className="rounded-full bg-yellow/90 px-3 py-1 font-semibold text-black">
-            200+ Qa'idah completions
+            200+ Qa&apos;idah completions
           </span>
           <span className="rounded-full bg-yellow/90 px-3 py-1 font-semibold text-black">
-            50+ workshops & webinars
+            50+ workshops &amp; webinars conducted
           </span>
         </div>
       </div>
     </section>
   );
 }
-
-

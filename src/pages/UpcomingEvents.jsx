@@ -1,7 +1,7 @@
 import workshopFlyer from '../assets/upcoming-workshop-jab-duniya.png';
 
-const ENROLL_TEL = '+918850999818';
-const ENROLL_TEL_DISPLAY = '+91 88509 99818';
+const ENROLL_TEL = '+91 8850-999818';
+const ENROLL_TEL_DISPLAY = '+91 8850-999818';
 
 export default function UpcomingEvents() {
   return (

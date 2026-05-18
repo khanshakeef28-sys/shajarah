@@ -10,10 +10,6 @@ import Founder from './pages/Founder.jsx';
 import KidsQaidaToQuran from './pages/KidsQaidaToQuran.jsx';
 import KidsHifz from './pages/KidsHifz.jsx';
 import KidsSundayClasses from './pages/KidsSundayClasses.jsx';
-import WomenQaidaToRecitation from './pages/WomenQaidaToRecitation.jsx';
-import WomenKhatmah from './pages/WomenKhatmah.jsx';
-import WomenParentingSeries from './pages/WomenParentingSeries.jsx';
-import WomenAlHudaOutreach from './pages/WomenAlHudaOutreach.jsx';
 // src/App.jsx
 import Preloader from './components/Preloader.jsx';
 import { Mail, MapPin, Phone, Globe, Facebook, Instagram, Youtube, Linkedin } from 'lucide-react';
@@ -55,10 +51,6 @@ export default function App() {
           <Route path="/kids/qaida-to-quran-journey" element={<KidsQaidaToQuran />} />
           <Route path="/kids/hifz" element={<KidsHifz />} />
           <Route path="/kids/sunday-classes" element={<KidsSundayClasses />} />
-          <Route path="/women/qaidah-to-recitation" element={<WomenQaidaToRecitation />} />
-          <Route path="/women/khatmah" element={<WomenKhatmah />} />
-          <Route path="/women/parenting-series" element={<WomenParentingSeries />} />
-          <Route path="/women/alhuda-outreach" element={<WomenAlHudaOutreach />} />
         </Routes>
       </main>
       

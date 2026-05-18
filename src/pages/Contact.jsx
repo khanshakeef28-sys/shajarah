@@ -15,7 +15,7 @@ export default function Contact() {
       <div className="grid gap-6 lg:grid-cols-3">
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
           <h2 className="text-lg font-semibold text-black">Phone</h2>
-          <p className="mt-2 text-black/80">+91 8850999818 </p>
+          <p className="mt-2 text-black/80">+91 8850-999818 </p>
         </div>
         <div className="rounded-3xl border border-black/10 bg-white p-6 shadow-sm">
           <h2 className="text-lg font-semibold text-black">Email</h2>

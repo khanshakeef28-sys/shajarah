@@ -165,7 +165,7 @@ const KidsSundayClasses = () => {
               <button className="btn btn-outline">Share with Parents</button>
             </div>
             <div className="space-y-1 text-sm text-black/70">
-              <p>Call/WhatsApp: +91 8850999818</p>
+              <p>Call/WhatsApp: +91 8850-999818</p>
               <p>Email: info@shajarahacademy.com</p>
               <p>Instagram: @shajaraseekers</p>
             </div>

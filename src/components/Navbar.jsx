@@ -1,6 +1,6 @@
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useEffect, useRef, useState } from 'react';
-import { courses } from '../data/courses';
+import { courses, womenPrograms } from '../data/courses';
 import ShajarahLogo from './ShajarahLogo.jsx';
 
 export default function Navbar() {
@@ -109,15 +109,36 @@ export default function Navbar() {
               <ul
                 id="women-menu"
                 role="menu"
-                className={`${openMenu === 'women' ? 'block' : 'hidden'} absolute left-0 top-full mt-2 min-w-56 rounded-md border border-black/10 bg-white text-black shadow-lg p-2 space-y-1 z-50`}
+                className={`${openMenu === 'women' ? 'block' : 'hidden'} absolute left-0 top-full mt-2 w-[min(22rem,calc(100vw-2rem))] max-h-[min(70vh,32rem)] overflow-y-auto rounded-md border border-black/10 bg-white text-black shadow-lg p-3 space-y-3 z-50`}
                 onMouseLeave={() => setOpenMenu(null)}
               >
-                {courses.women.map((c) => (
-                  <li key={c.slug}>
-                    <NavLink role="menuitem" to={`/women/${c.slug}`} className={({ isActive }) => `block px-3 py-2 rounded-md hover:bg-black/5 ${isActive ? 'underline' : ''}`}>{c.title}</NavLink>
+                {womenPrograms.map((group) => (
+                  <li key={group.title}>
+                    <p className="px-2 py-1 text-xs font-semibold uppercase tracking-wide text-black/50">
+                      {group.title}
+                    </p>
+                    <ul className="space-y-0.5">
+                      {group.items.map((c) => (
+                        <li key={c.slug}>
+                          <NavLink
+                            role="menuitem"
+                            to={`/women/${c.slug}`}
+                            className={({ isActive }) =>
+                              `block px-3 py-1.5 text-sm rounded-md hover:bg-black/5 ${isActive ? 'underline' : ''}`
+                            }
+                          >
+                            {c.title}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                 ))}
-                <li className="border-t border-black/10 mt-1 pt-1"><NavLink role="menuitem" to="/women" className={linkCls}>All Women</NavLink></li>
+                <li className="border-t border-black/10 mt-1 pt-2">
+                  <NavLink role="menuitem" to="/women" className="block px-3 py-2 rounded-md hover:bg-black/5 font-medium">
+                    All Women Programs
+                  </NavLink>
+                </li>
               </ul>
             </li>
 
@@ -180,14 +201,41 @@ export default function Navbar() {
               <ul
                 id="women-menu-mobile"
                 role="menu"
-                className={`${openMenu === 'women' ? 'block' : 'hidden'} mt-2 ml-4 bg-white text-black rounded-md border border-black/10 p-2 space-y-1`}
+                className={`${openMenu === 'women' ? 'block' : 'hidden'} mt-2 ml-4 max-h-80 overflow-y-auto bg-white text-black rounded-md border border-black/10 p-3 space-y-3`}
               >
-                {courses.women.map((c) => (
-                  <li key={c.slug}>
-                    <NavLink role="menuitem" to={`/women/${c.slug}`} className={({ isActive }) => `block px-3 py-2 rounded-md hover:bg-black/5 text-black ${isActive ? 'underline' : ''}`} onClick={() => setIsMobileMenuOpen(false)}>{c.title}</NavLink>
+                {womenPrograms.map((group) => (
+                  <li key={group.title}>
+                    <p className="px-2 py-1 text-xs font-semibold uppercase tracking-wide text-black/50">
+                      {group.title}
+                    </p>
+                    <ul className="space-y-0.5">
+                      {group.items.map((c) => (
+                        <li key={c.slug}>
+                          <NavLink
+                            role="menuitem"
+                            to={`/women/${c.slug}`}
+                            className={({ isActive }) =>
+                              `block px-3 py-1.5 text-sm rounded-md hover:bg-black/5 text-black ${isActive ? 'underline' : ''}`
+                            }
+                            onClick={() => setIsMobileMenuOpen(false)}
+                          >
+                            {c.title}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                 ))}
-                <li className="border-t border-cream/10 mt-1 pt-1"><NavLink role="menuitem" to="/women" className={linkCls} onClick={() => setIsMobileMenuOpen(false)}>All Women</NavLink></li>
+                <li className="border-t border-black/10 mt-1 pt-2">
+                  <NavLink
+                    role="menuitem"
+                    to="/women"
+                    className="block px-3 py-2 text-sm font-medium text-black hover:bg-black/5 rounded-md"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    All Women Programs
+                  </NavLink>
+                </li>
               </ul>
             </li>
 
