@@ -19,7 +19,7 @@ const WomenQaidaToRecitation = () => {
     <section className="section space-y-10 py-10">
       <div className="space-y-4">
         <div className="space-y-2">
-          <h1 className="h1">Qa’idah to Recitation Journey</h1>
+          <h1 className="h1">Qirā’ah to Recitation Journey</h1>
           <div className="max-w-3xl rounded-2xl border border-black/10 bg-white/60 p-4 text-sm text-black/70 shadow-sm">
             Build a strong Quran reading foundation with guided practice, clear milestones, and a
             supportive pace that fits your schedule.
