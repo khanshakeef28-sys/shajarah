@@ -23,6 +23,7 @@ export default function UpcomingEvents() {
                 className="w-full h-auto rounded-xl object-cover shadow-sm"
                 loading="lazy"
                 decoding="async"
+                
               />
             </div>
           </div>
